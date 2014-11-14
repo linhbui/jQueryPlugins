@@ -1,5 +1,6 @@
 .active {
     font-weight: bold;
+    transition: opacity 0.5s linear;
 }
 
 .tab-pane {
@@ -8,4 +9,10 @@
 
 .tab-pane.active {
     display:block;
+}
+
+.transitioning {
+    opacity: 0;
+    display: block;
+    transition: opacity 0.5s linear;
 }

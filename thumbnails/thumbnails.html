@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Cool Website</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./thumbnails.js"></script>
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+        <link href="./thumbnails.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <div class="thumbnails">
+         <div class="active"></div>
+             <div class="gutter">
+                 <a class="nav left-nav" href=javascript:void(0) >&lt;</a>
+                 <div class="clearfix"></div>
+                 <div class="gutter-images">  
+                      <img src="./img/1.jpg">
+                      <img src="./img/2.jpg">
+                      <img src="./img/3.jpg">
+                      <img src="./img/4.jpg">
+                      <img src="./img/5.jpg">
+                      <img src="./img/6.jpg">
+                      <img src="./img/7.jpg">
+                      <img src="./img/8.jpg">
+                      <img src="./img/9.jpg">
+                      <img src="./img/10.jpg"> 
+                 </div>
+                  <a class="nav right-nav" href=javascript:void(0) >&gt;</a>
+                  <div class="clearfix"></div>
+            </div>
+                
+       </div>
+        <script>
+          $(function() {
+            $('.thumbnails').thumbnails();
+          })
+        </script>
+    </body>
+</html>
+
